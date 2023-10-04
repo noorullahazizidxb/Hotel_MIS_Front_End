@@ -1,0 +1,291 @@
+.App,
+.App[data-v-7f44ba7c] {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  width: "100%";
+  font-weight: bold;
+  padding: 1px;
+  height: calc(200vh - "200%");
+  transition: all 0.5s;
+
+  --brand-color: #990000;
+  --spacing: 0.66rem;
+  --max-reading-length: 70ch;
+  --brandAngle: 22deg;
+  --visibility: hidden;
+  --value: 24;
+  --unit: px;
+  /* Yep */
+  font-size: calc(var(--value) * 1px);
+  /* Yep */
+  --pixel_converter: 1px;
+  font-size: calc(var(--value) * var(--pixel_converter));
+}
+
+.MuiTableCell-root,
+.MuiTableCell-body,
+.MuiTableCell-alignLeft {
+  font-size: 5px;
+}
+
+div.App,
+.App[data-v-763fcd52] {
+  border-radius: 20px;
+
+}
+
+
+button {
+  --h: 100%;
+  --s: 75%;
+  --l: 75%;
+  --a: 1%;
+  background-color: hsl(var(--h) var(--s) var(--l) / var(--a));
+
+  color: var(--text-primary);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  transition: all 0.5s;
+  --spread: 1px;
+  box-shadow: 0px 9px 20px var(--spread) var(--background);
+  /* box-shadow: 0 0 2px var(--spread) var(--background); */
+
+  transform: var(--scale, scale(1)) var(--translate, translate(0));
+}
+
+button:active {
+  --translate: translate(0, 2px);
+}
+
+button:hover {
+  --scale: scale(1.1);
+  --spread: 8px;
+  --l: 80%;
+  --s: 80%;
+  --a: 5%;
+}
+
+#form_paper {
+  background-color: var(--background);
+  z-index: 1;
+}
+
+#login_paper {
+  padding: 50px;
+  background-color: var(--background);
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  border-radius: 30px;
+  /* box-shadow: 0 0 20px var(--spread) var(--brand-color);
+   */
+  box-shadow: 0px 9px 20px var(--spread) var(--brand-color);
+
+}
+
+div[data-v-a4e61016],
+div[data-v-83ea05a4] {
+  border-radius: 20px;
+}
+
+button:focus {
+  /* Change the saturation on focus */
+  --s: 75%;
+}
+
+button[disabled] {
+  /* Make look disabled */
+  --s: 0%;
+  --a: 0.5;
+}
+
+.grid {
+  display: grid;
+  --edge: 10;
+  grid-template-columns: var(--edge) 1fr var(--edge);
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    --edge: 15%;
+  }
+}
+
+.MuiPaper-root,
+.MuiTableCell-head,
+.MuiTableCell-root,
+.MTableHeader-header-35,
+.MuiTableCell-paddingCheckbox {
+  background-color: var(--transparent-black);
+  border: 2px solid var(--text-secondary);
+  color: var(--text-primary);
+  border-radius: 10px;
+  /* box-shadow: 0 0 20px var(--spread) var(--text-secondary); */
+  box-shadow: 0px 9px 20px var(--spread) var(--text-secondary);
+
+
+}
+
+.MuiPaper-root[data-v-4ab3e356] {
+  background-color: var(--transparent-black);
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  border-radius: 30px;
+  /* box-shadow: 0 0 20px var(--spread) var(--text-primary); */
+  box-shadow: 0px 9px 20px var(--spread) var(--text-primary);
+
+}
+
+#paper {
+  background-color: var(--transparent-black);
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  border-radius: 30px;
+  /* box-shadow: 0 0 20px var(--spread) var(--text-primary); */
+  box-shadow: 0px 9px 20px var(--spread) var(--text-primary);
+
+}
+
+.css-plsipt-MuiPaper-root {
+  margin-right: 1%;
+}
+
+
+.MuiPaper-root[data-v-902c4293]:hover {
+
+  background-color: var(--drawer-color);
+}
+
+/* the style for the cards of the home page */
+.MuiPaper-root[data-v-14f8d346],
+.MuiPaper-root[data-v-da63c5b6],
+.MuiPaper-root[data-v-f2217460],
+.MuiPaper-root[data-v-5936182f],
+.MuiPaper-root,
+.MuiCard-root,
+.makeStyles-Over_All_Report-61,
+.MuiPaper-elevation1,
+.MuiPaper-rounded {
+  background-color: var(--transparent-black);
+  color: var(--text-primary);
+  border: 3px solid var(--text-primary);
+  border-radius: 30px;
+  /* box-shadow: 0 0 20px var(--spread) var(--text-primary); */
+  box-shadow: 0px 9px 20px var(--spread) var(--text-primary);
+
+}
+
+.ListButton {
+  color: var(--text-primary);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  transition: all 0.5s;
+  --spread: 1px;
+  box-shadow: 0px 9px 20px var(--spread) var(--background);
+  /* box-shadow: 0 0 2px var(--spread) var(--background); */
+
+  transform: var(--scale, scale(1)) var(--translate, translate(0));
+
+}
+
+.MuiFormLabel-root {
+  color: var(--text-primary);
+}
+
+.MuiStepLabel-label,
+.MuiStepLabel-completed {
+  color: var(--text-primary);
+}
+
+.MuiFormControl-root,
+.MuiTextField-root,
+.MuiFormControl-fullWidth {
+  color: var(--text-primary);
+}
+
+/* 
+::-webkit-textfield-decoration-container{
+
+} */
+/* body {
+  --bg1: url(./img/angles-top-left.svg);
+  --bg2: url(./img/angles-top-right.svg);
+  --bg3: url(./img/angles-bottom-right.svg);
+  --bg4: url(./img/angles-bottom-left.svg);
+  --bg5: url(./img/bonus-background.svg);
+  
+  background-image: var(--bg1), var(--bg2), var(--bg3), var(--bg4);
+}
+@media (min-width: 1500px) {
+  body {
+    background-image: var(--bg1), var(--bg2), var(--bg3), var(--bg4), var(--bg5);
+  }
+} */
+
+/* .MuiButtonBase-root{
+  background: hsl(var(--h) var(--s) var(--l) / var(--a));
+  
+color: var(--brand-color);
+border: 2px var(--brand-color) solid;
+
+transition: all .5s;
+--spread: 1px;
+box-shadow: 0 0 20px var(--spread) var(--brand-color);
+} */
+
+.Login-component {
+  /* The image used */
+  background-image: url(./2022_03_22_21_22_IMG_0510.JPG);
+
+  /* Full height */
+  height: 900px;
+  padding: 350px;
+  z-index: 1;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+}
+
+#Log_In_Heading {
+  @font-face {
+    font-family: "Genos";
+    src: local("Genos"),
+      url("./fonts/Genos-VariableFont_wght.ttf") format("truetype");
+  }
+
+  color: black;
+}
+
+#div_button.button {
+  padding-right: 50%;
+}
+
+/* for making the height of the background large */
+
+main {
+
+  /* height: calc(250vh - "50%"); */
+  /* margin-top: 2%; */
+
+
+  min-height: 100vh;
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  background-color: var(--background);
+  width: "100%";
+
+  /* height: calc(100vh + 200%); */
+
+}
+
+.div_List {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}

@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Genos";
+  src: local("Genos"),
+    url("./fonts/Genos-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --background: white;
+  --brand-color: #990000;
+  --transparent-black: rgba(68, 68, 68, 0.116);
+  --spacing: 0.66rem;
+  --max-reading-length: 70ch;
+  --brandAngle: 22deg;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+
+
+
+}
+
+[data-theme='dark'] {
+  --brand-color: #990000;
+  --transparent-black: rgba(82, 82, 82, 0.356);
+  --spacing: 0.66rem;
+  --max-reading-length: 70ch;
+  --brandAngle: 22deg;
+  --background: #263238f6;
+  --text-primary: #CFD8DC;
+  --text-secondary: grey;
+  --accent: darkred;
+  --app-bar: #777777;
+  --drawer-color: var(--brand-color);
+  --List-button-edit: #71d682;
+  --List-button-one: #574fcc;
+  --List-button-tow: #ee348b;
+}
+
+[data-theme='light'] {
+  --brand-color: #990000;
+  --transparent-black: #ff6f0011;
+  --spacing: 0.66rem;
+  --max-reading-length: 70ch;
+  --brandAngle: 22deg;
+  --background: #E0E0E0;
+  --text-primary: #000000;
+  --text-secondary: #777777;
+  --accent: darkred;
+  --app-bar: #263238f6;
+  --drawer-color: #FF6D00;
+  --List-button-edit: #71d682;
+  --List-button-one: #574fcc;
+  --List-button-tow: #ee348b;
+}
+
+/* .MuiPaper-root[data-v-c1bd85aa] .MuiPaper-elevation6 .MuiPaper-rounded
+  {
+    background-color:var(--background);
+  } */
+.MuiStepLabel-label.MuiStepLabel-completed {
+  color: var(--text-secondary);
+}
+
+
+.MuiPaper-rounded,
+.MuiPaper-rounded[data-v-7f44ba7c] {
+  background-color: var(--background);
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  border-radius: 30px;
+  box-shadow: 0 0 20px var(--spread) var(--brand-color);
+}
